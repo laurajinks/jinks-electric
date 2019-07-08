@@ -23,30 +23,33 @@ export const Header = () => {
             Jinks Electric Co
           </Link>
         </h1>
-        <h3 style={{margin: '7px'}}>
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/about`}
-          >
-            About
-          </Link>
-        </h3>
-        <h3 style={{margin: '7px'}}>
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/contact`}
-          >
-            Contact
-          </Link>
-        </h3>
+        <div className={styles['navLinks']}>
+          <h3 style={{margin: '2em'}}>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to={`#about`}
+            >
+              About
+            </Link>
+          </h3>
+          <h3 style={{margin: '2em'}}>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to={'#contact'}
+            >
+              Contact
+            </Link>
+          </h3>
+        </div>
+
       </div>
       <div className={styles['hamburgerHeader']}>
         <h1
@@ -73,26 +76,26 @@ export const Header = () => {
         {hamburger && (
           <div className={styles['dropDownMenu']}>
             <div className={styles['dropDownLinks']}>
-              <h3 style={{margin: '7px'}}>
+              <h3 style={{margin: '1em'}}>
                 <Link
                   style={{
                     boxShadow: `none`,
                     textDecoration: `none`,
                     color: `inherit`,
                   }}
-                  to={`/about`}
+                  to={`#about`}
                 >
                   About
                 </Link>
               </h3>
-              <h3 style={{margin: '7px'}}>
+              <h3 style={{margin: '1em'}}>
                 <Link
                   style={{
                     boxShadow: `none`,
                     textDecoration: `none`,
                     color: `inherit`,
                   }}
-                  to={`/contact`}
+                  to={`#contact`}
                 >
                   Contact
                 </Link>
