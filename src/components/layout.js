@@ -4,6 +4,11 @@ import PropTypes from "prop-types"
 import Header from "./header"
 import "./layout.css"
 
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
+
 const Layout = ({ children }) => {
 
   return (
