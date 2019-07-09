@@ -31,6 +31,18 @@ export const Header = () => {
                 textDecoration: `none`,
                 color: `inherit`,
               }}
+              to={`#services`}
+            >
+              Services
+            </Link>
+          </h3>
+          <h3 style={{margin: '2em'}}>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
               to={`#about`}
             >
               About
@@ -76,6 +88,18 @@ export const Header = () => {
         {hamburger && (
           <div className={styles['dropDownMenu']}>
             <div className={styles['dropDownLinks']}>
+              <h3 style={{margin: '1em'}}>
+                <Link
+                  style={{
+                    boxShadow: `none`,
+                    textDecoration: `none`,
+                    color: `inherit`,
+                  }}
+                  to={`#services`}
+                >
+                  Services
+                </Link>
+              </h3>
               <h3 style={{margin: '1em'}}>
                 <Link
                   style={{
